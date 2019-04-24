@@ -32,3 +32,5 @@ class LocalFeedLoader: FeedLoader {
         // do something
     }
 }
+
+UIImage(named: "first-protocol")
