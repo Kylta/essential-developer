@@ -20,3 +20,9 @@ class FeedViewController: UIViewController {
         }
     }
 }
+
+class RemoteFeedLoader: FeedLoader {
+    func loadFeed(completion: @escaping ([String]) -> Void) {
+        // do something
+    }
+}
