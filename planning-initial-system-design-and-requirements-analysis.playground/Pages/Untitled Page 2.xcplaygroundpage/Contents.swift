@@ -6,6 +6,10 @@ protocol FeedLoader {
     func loadFeed(completion: @escaping ([String]) -> Void)
 }
 
+struct Reachability {
+    static let networkAvailable = false
+}
+
 class FeedViewController: UIViewController {
     var remote: RemoteFeedLoader!
     var local: LocalFeedLoader!
@@ -19,6 +23,15 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if Reachability.networkAvailable {
+            remote.loadFeed { loadedItems in
+                // do something
+            }
+        } else {
+            local.loadFeed { loadedItems in
+                // do something
+            }
+        }
     }
 }
 
