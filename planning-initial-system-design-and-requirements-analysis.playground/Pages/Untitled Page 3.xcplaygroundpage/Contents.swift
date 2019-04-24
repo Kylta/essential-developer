@@ -56,6 +56,8 @@ class RemoteWithLocalFallbackFeedLoader: FeedLoader {
     }
 }
 
+UIImage(named: "second-protocol")
+
 let vc = FeedViewController(loader: RemoteFeedLoader())
 let vc2 = FeedViewController(loader: LocalFeedLoader())
 let vc3 = FeedViewController(loader: RemoteWithLocalFallbackFeedLoader(
