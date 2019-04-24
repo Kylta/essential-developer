@@ -46,3 +46,5 @@ class LocalFeedLoader: FeedLoader {
         // do something
     }
 }
+
+UIImage(named: "concret-type")
