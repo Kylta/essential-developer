@@ -26,3 +26,9 @@ class RemoteFeedLoader: FeedLoader {
         // do something
     }
 }
+
+class LocalFeedLoader: FeedLoader {
+    func loadFeed(completion: @escaping ([String]) -> Void) {
+        // do something
+    }
+}
