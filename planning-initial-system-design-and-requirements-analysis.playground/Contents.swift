@@ -1,9 +1,11 @@
 import UIKit
 
-class FeedViewController: UIViewController {
-    var loadFeed: ((([String]) -> Void) -> Void)!
+typealias FeedLoader = (([String]) -> Void) -> Void
 
-    convenience init(loadFeed: @escaping (([String]) -> Void) -> Void) {
+class FeedViewController: UIViewController {
+    var loadFeed: FeedLoader!
+
+    convenience init(loadFeed: @escaping FeedLoader) {
         self.init()
         self.loadFeed = loadFeed
     }
