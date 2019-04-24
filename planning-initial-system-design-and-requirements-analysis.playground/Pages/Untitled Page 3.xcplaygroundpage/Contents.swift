@@ -55,3 +55,16 @@ class RemoteWithLocalFallbackFeedLoader: FeedLoader {
         load(completion)
     }
 }
+
+let vc = FeedViewController(loader: RemoteFeedLoader())
+let vc2 = FeedViewController(loader: LocalFeedLoader())
+let vc3 = FeedViewController(loader: RemoteWithLocalFallbackFeedLoader(
+    remote: RemoteFeedLoader(),
+    local: LocalFeedLoader()))
+
+// For use with Segue, Nib and more...
+let vc4 = FeedViewController()
+vc4.loader = RemoteWithLocalFallbackFeedLoader(
+    remote: RemoteFeedLoader(),
+    local: LocalFeedLoader())
+
