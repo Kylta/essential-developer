@@ -12,7 +12,7 @@ import XCTest
 final class LoginUseCaseFactory {
     func makeUseCase() -> LoginUseCase {
         return LoginUseCase(output: LoginUseCaseOutputComposer([
-            LoginUseCaseOutputComposer([]),
+            LoginPresenter(),
             LoginUseCaseOutputComposer([]),
             LoginUseCaseOutputComposer([])
         ]))
@@ -28,5 +28,6 @@ class LoginUseCaseFactoryTests: XCTestCase {
 
         XCTAssertNotNil(composer)
         XCTAssertEqual(composer?.outputs.count, 3)
+        XCTAssertEqual(composer?.outputs.filter { $0 is LoginPresenter }.count, 1)
     }
 }
