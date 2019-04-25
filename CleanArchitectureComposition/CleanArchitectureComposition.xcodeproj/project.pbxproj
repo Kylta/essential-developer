@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		46A302E62271AC4F0026A8D5 /* CleanArchitectureComposition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A302DC2271AC4F0026A8D5 /* CleanArchitectureComposition.framework */; };
+		46A302F72271AC800026A8D5 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A302F62271AC800026A8D5 /* LoginUseCase.swift */; };
+		46A302F92271AD3C0026A8D5 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A302F82271AD3C0026A8D5 /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,8 @@
 		46A302E02271AC4F0026A8D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46A302E52271AC4F0026A8D5 /* CleanArchitectureCompositionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureCompositionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A302EC2271AC4F0026A8D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A302F62271AC800026A8D5 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		46A302F82271AD3C0026A8D5 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				46A302E02271AC4F0026A8D5 /* Info.plist */,
+				46A302F62271AC800026A8D5 /* LoginUseCase.swift */,
+				46A302F82271AD3C0026A8D5 /* LoginPresenter.swift */,
 			);
 			path = CleanArchitectureComposition;
 			sourceTree = "<group>";
@@ -141,6 +147,7 @@
 				TargetAttributes = {
 					46A302DB2271AC4F0026A8D5 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					46A302E42271AC4F0026A8D5 = {
 						CreatedOnToolsVersion = 10.1;
@@ -187,6 +194,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A302F92271AD3C0026A8D5 /* LoginPresenter.swift in Sources */,
+				46A302F72271AC800026A8D5 /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +341,7 @@
 		46A302F12271AC4F0026A8D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -351,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.christophebugnon.CleanArchitectureComposition;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -358,6 +369,7 @@
 		46A302F22271AC4F0026A8D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -384,6 +396,7 @@
 		46A302F42271AC4F0026A8D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 78BZCUCGN3;
@@ -402,6 +415,7 @@
 		46A302F52271AC4F0026A8D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 78BZCUCGN3;
