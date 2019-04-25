@@ -84,12 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				46A302E02271AC4F0026A8D5 /* Info.plist */,
-				46A302F62271AC800026A8D5 /* LoginUseCase.swift */,
-				46A303042271C46A0026A8D5 /* LoginUseCaseFactory.swift */,
-				46A302F82271AD3C0026A8D5 /* LoginPresenter.swift */,
-				46A302FA2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift */,
-				46A302FC2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift */,
-				46A303002271BFA20026A8D5 /* LoginUseCaseOutputComposer.swift */,
+				46A303062271C4BD0026A8D5 /* Business Logic */,
+				46A303092271C4E50026A8D5 /* Main */,
+				46A303072271C4CC0026A8D5 /* Presenter */,
+				46A303082271C4D70026A8D5 /* Analytics */,
 			);
 			path = CleanArchitectureComposition;
 			sourceTree = "<group>";
@@ -98,10 +96,52 @@
 			isa = PBXGroup;
 			children = (
 				46A302EC2271AC4F0026A8D5 /* Info.plist */,
+				46A3030A2271C4EC0026A8D5 /* Main */,
+			);
+			path = CleanArchitectureCompositionTests;
+			sourceTree = "<group>";
+		};
+		46A303062271C4BD0026A8D5 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				46A302F62271AC800026A8D5 /* LoginUseCase.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		46A303072271C4CC0026A8D5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46A302F82271AD3C0026A8D5 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46A303082271C4D70026A8D5 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				46A302FA2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift */,
+				46A302FC2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		46A303092271C4E50026A8D5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				46A303042271C46A0026A8D5 /* LoginUseCaseFactory.swift */,
+				46A303002271BFA20026A8D5 /* LoginUseCaseOutputComposer.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		46A3030A2271C4EC0026A8D5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				46A302FE2271BA5C0026A8D5 /* LoginUseCaseOutputComposerTests.swift */,
 				46A303022271C00F0026A8D5 /* LoginUseCaseFactoryTests.swift */,
 			);
-			path = CleanArchitectureCompositionTests;
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
