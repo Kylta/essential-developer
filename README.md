@@ -5,14 +5,14 @@
 
 ## Bad BDD Specs
 
-###Story
+### Story
 
 ```
 As a user
 I want the app to load the feed 
 So I can see the feed
 ```
-###Acceptance criteria
+### Acceptance criteria
 
 ```
 Given a user
@@ -169,28 +169,27 @@ GET *url* (TBD)
 200 RESPONSE
 
 {
-"items": [
-{
-"id": "a UUID",
-"description": "a description",
-"location": "a location",
-"image": "https://a-image.url",
-},
-{
-"id": "another UUID",
-"description": "another description",
-"image": "https://another-image.url"
-},
-{
-"id": "even another UUID",
-"location": "even another location",
-"image": "https://even-another-image.url"
-},
-{
-"id": "yet another UUID",
-"image": "https://yet-another-image.url"
-}
-...
-]
+	"items": [{
+			"id": "a UUID",
+			"description": "a description",
+			"location": "a location",
+			"image": "https://a-image.url"
+		},
+		{
+			"id": "another UUID",
+			"description": "another description",
+			"image": "https://another-image.url"
+		},
+		{
+			"id": "even another UUID",
+			"location": "even another location",
+			"image": "https://even-another-image.url"
+		},
+		{
+			"id": "yet another UUID",
+			"image": "https://yet-another-image.url"
+		}
+		...
+	]
 }
 ```
