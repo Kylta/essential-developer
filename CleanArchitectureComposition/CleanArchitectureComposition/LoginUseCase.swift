@@ -13,14 +13,14 @@ protocol LoginUseCaseOutput {
     func loginFailed()
 }
 
-class LoginUseCase {
-    let crashlyticsTracker: CrashlyticsLoginTracker
-    let firebaseAnalyticsTracker: FirebaseAnalyticsLoginTracker
-    let loginPresenter: LoginPresenter
+final class LoginUseCase {
+    let crashlyticsTracker: LoginUseCaseOutput
+    let firebaseAnalyticsTracker: LoginUseCaseOutput
+    let loginPresenter: LoginUseCaseOutput
 
-    init(crashlyticsTracker: CrashlyticsLoginTracker,
-         firebaseAnalyticsTracker: FirebaseAnalyticsLoginTracker,
-         loginPresenter: LoginPresenter) {
+    init(crashlyticsTracker: LoginUseCaseOutput,
+         firebaseAnalyticsTracker: LoginUseCaseOutput,
+         loginPresenter: LoginUseCaseOutput) {
         self.crashlyticsTracker = crashlyticsTracker
         self.firebaseAnalyticsTracker = firebaseAnalyticsTracker
         self.loginPresenter = loginPresenter
