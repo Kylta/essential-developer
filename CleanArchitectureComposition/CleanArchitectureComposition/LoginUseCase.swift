@@ -14,6 +14,21 @@ protocol LoginUseCaseOutput {
 }
 
 class LoginUseCase {
+    let crashlyticsTracker: CrashlyticsLoginTracker
+    let firebaseAnalyticsTracker: FirebaseAnalyticsLoginTracker
+    let loginPresenter: LoginPresenter
 
-    func login(name: String, password: String) {}
+    init(crashlyticsTracker: CrashlyticsLoginTracker,
+         firebaseAnalyticsTracker: FirebaseAnalyticsLoginTracker,
+         loginPresenter: LoginPresenter) {
+        self.crashlyticsTracker = crashlyticsTracker
+        self.firebaseAnalyticsTracker = firebaseAnalyticsTracker
+        self.loginPresenter = loginPresenter
+    }
+
+    func login(name: String, password: String) {
+        crashlyticsTracker.loginSuceeded()
+        firebaseAnalyticsTracker.loginSuceeded()
+        loginPresenter.loginSuceeded()
+    }
 }
