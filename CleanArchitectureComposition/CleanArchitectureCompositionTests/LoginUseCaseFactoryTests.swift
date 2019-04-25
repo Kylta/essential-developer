@@ -11,7 +11,11 @@ import XCTest
 
 final class LoginUseCaseFactory {
     func makeUseCase() -> LoginUseCase {
-        return LoginUseCase(output: LoginUseCaseOutputComposer([]))
+        return LoginUseCase(output: LoginUseCaseOutputComposer([
+            LoginUseCaseOutputComposer([]),
+            LoginUseCaseOutputComposer([]),
+            LoginUseCaseOutputComposer([])
+        ]))
     }
 }
 
@@ -20,7 +24,9 @@ class LoginUseCaseFactoryTests: XCTestCase {
     func test() {
         let sut = LoginUseCaseFactory()
         let useCase = sut.makeUseCase()
+        let composer = useCase.output as? LoginUseCaseOutputComposer
 
-        XCTAssertTrue(useCase.output is LoginUseCaseOutputComposer)
+        XCTAssertNotNil(composer)
+        XCTAssertEqual(composer?.outputs.count, 3)
     }
 }
