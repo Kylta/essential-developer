@@ -9,16 +9,6 @@
 import XCTest
 @testable import CleanArchitectureComposition
 
-final class LoginUseCaseFactory {
-    func makeUseCase() -> LoginUseCase {
-        return LoginUseCase(output: LoginUseCaseOutputComposer([
-            LoginPresenter(),
-            CrashlyticsLoginTracker(),
-            FirebaseAnalyticsLoginTracker()
-        ]))
-    }
-}
-
 class LoginUseCaseFactoryTests: XCTestCase {
 
     func test_createdUseCase_hasComposedOutputs() {
