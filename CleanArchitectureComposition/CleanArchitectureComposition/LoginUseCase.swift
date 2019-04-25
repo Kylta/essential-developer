@@ -14,16 +14,16 @@ protocol LoginUseCaseOutput {
 }
 
 final class LoginUseCase {
-    let outputs: [LoginUseCaseOutput]
+    let output: LoginUseCaseOutput
 
-    init(outputs: [LoginUseCaseOutput]) {
-        self.outputs = outputs
+    init(output: LoginUseCaseOutput) {
+        self.output = output
     }
 
     func login(name: String, password: String) {
         // if succeed
-        outputs.forEach { $0.loginSuceeded() }
+        output.loginSuceeded()
         // else if failed
-        outputs.forEach { $0.loginFailed() }
+        output.loginFailed()
     }
 }
