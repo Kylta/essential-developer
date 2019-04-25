@@ -13,8 +13,8 @@ final class LoginUseCaseFactory {
     func makeUseCase() -> LoginUseCase {
         return LoginUseCase(output: LoginUseCaseOutputComposer([
             LoginPresenter(),
-            LoginUseCaseOutputComposer([]),
-            LoginUseCaseOutputComposer([])
+            CrashlyticsLoginTracker(),
+            FirebaseAnalyticsLoginTracker()
         ]))
     }
 }
@@ -26,8 +26,9 @@ class LoginUseCaseFactoryTests: XCTestCase {
         let useCase = sut.makeUseCase()
         let composer = useCase.output as? LoginUseCaseOutputComposer
 
-        XCTAssertNotNil(composer)
         XCTAssertEqual(composer?.outputs.count, 3)
         XCTAssertEqual(composer?.outputs.filter { $0 is LoginPresenter }.count, 1)
+        XCTAssertEqual(composer?.outputs.filter { $0 is CrashlyticsLoginTracker }.count, 1)
+        XCTAssertEqual(composer?.outputs.filter { $0 is FirebaseAnalyticsLoginTracker }.count, 1)
     }
 }
