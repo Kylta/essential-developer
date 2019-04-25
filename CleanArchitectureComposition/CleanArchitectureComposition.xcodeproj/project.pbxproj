@@ -10,6 +10,8 @@
 		46A302E62271AC4F0026A8D5 /* CleanArchitectureComposition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A302DC2271AC4F0026A8D5 /* CleanArchitectureComposition.framework */; };
 		46A302F72271AC800026A8D5 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A302F62271AC800026A8D5 /* LoginUseCase.swift */; };
 		46A302F92271AD3C0026A8D5 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A302F82271AD3C0026A8D5 /* LoginPresenter.swift */; };
+		46A302FB2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A302FA2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift */; };
+		46A302FD2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A302FC2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		46A302EC2271AC4F0026A8D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46A302F62271AC800026A8D5 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		46A302F82271AD3C0026A8D5 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		46A302FA2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsLoginTracker.swift; sourceTree = "<group>"; };
+		46A302FC2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLoginTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				46A302E02271AC4F0026A8D5 /* Info.plist */,
 				46A302F62271AC800026A8D5 /* LoginUseCase.swift */,
 				46A302F82271AD3C0026A8D5 /* LoginPresenter.swift */,
+				46A302FA2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift */,
+				46A302FC2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift */,
 			);
 			path = CleanArchitectureComposition;
 			sourceTree = "<group>";
@@ -194,8 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A302FD2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift in Sources */,
 				46A302F92271AD3C0026A8D5 /* LoginPresenter.swift in Sources */,
 				46A302F72271AC800026A8D5 /* LoginUseCase.swift in Sources */,
+				46A302FB2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
