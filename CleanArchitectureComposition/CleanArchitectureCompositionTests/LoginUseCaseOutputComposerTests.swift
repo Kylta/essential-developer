@@ -33,24 +33,32 @@ class LoginUseCaseOutputComposerTests: XCTestCase {
         sut.loginFailed()
     }
 
-    func test_composingOneOutput_delegateSucceedMessage() {
+    func test_composingMultipleOutputs_delegateSucceedMessage() {
         let output1 = LoginUseCaseOutputSpy()
-        let sut = LoginUseCaseOutputComposer([output1])
+        let output2 = LoginUseCaseOutputSpy()
+        let sut = LoginUseCaseOutputComposer([output1, output2])
 
         sut.loginSuceeded()
 
         XCTAssertEqual(output1.loginSucceededCallCount, 1)
         XCTAssertEqual(output1.loginFailedCallCount, 0)
+
+        XCTAssertEqual(output2.loginSucceededCallCount, 1)
+        XCTAssertEqual(output2.loginFailedCallCount, 0)
     }
 
-    func test_composingOneOutput_delegateFailedMessage() {
+    func test_composingMultipleOutputs_delegateFailedMessage() {
         let output1 = LoginUseCaseOutputSpy()
-        let sut = LoginUseCaseOutputComposer([output1])
+        let output2 = LoginUseCaseOutputSpy()
+        let sut = LoginUseCaseOutputComposer([output1, output2])
 
         sut.loginFailed()
 
-        XCTAssertEqual(output1.loginSucceededCallCount, 0)
         XCTAssertEqual(output1.loginFailedCallCount, 1)
+        XCTAssertEqual(output1.loginSucceededCallCount, 0)
+
+        XCTAssertEqual(output2.loginFailedCallCount, 1)
+        XCTAssertEqual(output2.loginSucceededCallCount, 0)
     }
 
     // MARK: Helpers
