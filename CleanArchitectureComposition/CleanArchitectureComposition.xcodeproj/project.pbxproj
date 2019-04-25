@@ -13,6 +13,7 @@
 		46A302FB2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A302FA2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift */; };
 		46A302FD2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A302FC2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift */; };
 		46A302FF2271BA5C0026A8D5 /* LoginUseCaseOutputComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A302FE2271BA5C0026A8D5 /* LoginUseCaseOutputComposerTests.swift */; };
+		46A303012271BFA20026A8D5 /* LoginUseCaseOutputComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A303002271BFA20026A8D5 /* LoginUseCaseOutputComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		46A302FA2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsLoginTracker.swift; sourceTree = "<group>"; };
 		46A302FC2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLoginTracker.swift; sourceTree = "<group>"; };
 		46A302FE2271BA5C0026A8D5 /* LoginUseCaseOutputComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposerTests.swift; sourceTree = "<group>"; };
+		46A303002271BFA20026A8D5 /* LoginUseCaseOutputComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				46A302F82271AD3C0026A8D5 /* LoginPresenter.swift */,
 				46A302FA2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift */,
 				46A302FC2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift */,
+				46A303002271BFA20026A8D5 /* LoginUseCaseOutputComposer.swift */,
 			);
 			path = CleanArchitectureComposition;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A302FD2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift in Sources */,
+				46A303012271BFA20026A8D5 /* LoginUseCaseOutputComposer.swift in Sources */,
 				46A302F92271AD3C0026A8D5 /* LoginPresenter.swift in Sources */,
 				46A302F72271AC800026A8D5 /* LoginUseCase.swift in Sources */,
 				46A302FB2271ADE10026A8D5 /* CrashlyticsLoginTracker.swift in Sources */,

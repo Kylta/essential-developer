@@ -9,22 +9,6 @@
 import XCTest
 @testable import CleanArchitectureComposition
 
-class LoginUseCaseOutputComposer: LoginUseCaseOutput {
-    let outputs: [LoginUseCaseOutput]
-
-    init(_ outputs: [LoginUseCaseOutput]) {
-        self.outputs = outputs
-    }
-
-    func loginSuceeded() {
-        outputs.forEach { $0.loginSuceeded() }
-    }
-
-    func loginFailed() {
-        outputs.forEach { $0.loginFailed() }
-    }
-}
-
 class LoginUseCaseOutputComposerTests: XCTestCase {
 
     func test_composingZeroOutputs_doesNotCrash() {
