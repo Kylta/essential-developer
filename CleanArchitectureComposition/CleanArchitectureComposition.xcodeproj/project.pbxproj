@@ -14,6 +14,7 @@
 		46A302FD2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A302FC2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift */; };
 		46A302FF2271BA5C0026A8D5 /* LoginUseCaseOutputComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A302FE2271BA5C0026A8D5 /* LoginUseCaseOutputComposerTests.swift */; };
 		46A303012271BFA20026A8D5 /* LoginUseCaseOutputComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A303002271BFA20026A8D5 /* LoginUseCaseOutputComposer.swift */; };
+		46A303032271C00F0026A8D5 /* LoginUseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A303022271C00F0026A8D5 /* LoginUseCaseFactoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		46A302FC2271AE2E0026A8D5 /* FirebaseAnalyticsLoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLoginTracker.swift; sourceTree = "<group>"; };
 		46A302FE2271BA5C0026A8D5 /* LoginUseCaseOutputComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposerTests.swift; sourceTree = "<group>"; };
 		46A303002271BFA20026A8D5 /* LoginUseCaseOutputComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposer.swift; sourceTree = "<group>"; };
+		46A303022271C00F0026A8D5 /* LoginUseCaseFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				46A302EC2271AC4F0026A8D5 /* Info.plist */,
 				46A302FE2271BA5C0026A8D5 /* LoginUseCaseOutputComposerTests.swift */,
+				46A303022271C00F0026A8D5 /* LoginUseCaseFactoryTests.swift */,
 			);
 			path = CleanArchitectureCompositionTests;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A303032271C00F0026A8D5 /* LoginUseCaseFactoryTests.swift in Sources */,
 				46A302FF2271BA5C0026A8D5 /* LoginUseCaseOutputComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
