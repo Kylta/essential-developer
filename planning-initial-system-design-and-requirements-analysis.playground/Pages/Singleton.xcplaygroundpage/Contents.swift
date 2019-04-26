@@ -1,7 +1,20 @@
 //: [Previous](@previous)
 
-import Foundation
+import UIKit
 
-var str = "Hello, playground"
+struct LoggedInUser {}
 
-//: [Next](@next)
+final class ApiClient {
+    static let instance = ApiClient()
+
+    func login(completion: (LoggedInUser) -> Void) {}
+}
+
+class LoginViewController: UIViewController {
+
+    func didTapLoginButton() {
+        ApiClient.instance.login { user in
+            // show next screen
+        }
+    }
+}

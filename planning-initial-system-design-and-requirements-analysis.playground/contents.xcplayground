@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' executeOnSourceChanges='false'>
     <pages>
-        <page name='Untitled Page'/>
-        <page name='Untitled Page 2'/>
-        <page name='Untitled Page 3'/>
+        <page name='Dependency_inversion'/>
+        <page name='Concrete_type'/>
+        <page name='Dependency_inversion_with_remoteWithLocalFallback'/>
+        <page name='Singleton'/>
     </pages>
 </playground>
