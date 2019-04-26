@@ -4,16 +4,19 @@ import UIKit
 
 struct LoggedInUser {}
 
-final class ApiClient {
+class ApiClient {
     static let instance = ApiClient()
 
     func login(completion: (LoggedInUser) -> Void) {}
 }
 
+class MockApiClient: ApiClient {}
+
 class LoginViewController: UIViewController {
+    var api = ApiClient.instance
 
     func didTapLoginButton() {
-        ApiClient.instance.login { user in
+        api.login { user in
             // show next screen
         }
     }
