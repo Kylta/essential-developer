@@ -4,21 +4,23 @@ import UIKit
 
 struct LoggedInUser {}
 
-// Singleton
+// Global Mutable Share State
 class ApiClient {
-    static let instance = ApiClient()
+    static var instance = ApiClient()
 
     func login(completion: (LoggedInUser) -> Void) {}
 }
 
 class MockApiClient: ApiClient {}
 
+ApiClient.instance = MockApiClient()
+
 class LoginViewController: UIViewController {
-    var api = ApiClient.instance
 
     func didTapLoginButton() {
-        api.login { user in
+        ApiClient.instance.login { user in
             // show next screen
         }
     }
 }
+
