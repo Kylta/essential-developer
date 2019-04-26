@@ -1,7 +1,5 @@
 //: [Previous](@previous)
 
-//: [Previous](@previous)
-
 import UIKit
 
 protocol FeedLoader {
