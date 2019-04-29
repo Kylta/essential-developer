@@ -2,18 +2,19 @@
 
 import UIKit
 
-struct LoggedInUser {}
-struct FeedItem {}
-
-// Singleton
+// API Module
 class ApiClient {
     static let shared = ApiClient()
 
-    func login(completion: (LoggedInUser) -> Void) {}
-    func loadFeed(completion: ([FeedItem]) -> Void) {}
+    func execute(_: URLRequest, completion: (Data) -> Void) {}
 }
 
-class MockApiClient: ApiClient {}
+// Login Module
+struct LoggedInUser {}
+
+extension ApiClient {
+    func login(completion: (LoggedInUser) -> Void) {}
+}
 
 class LoginViewController: UIViewController {
     var api = ApiClient.shared
@@ -23,6 +24,13 @@ class LoginViewController: UIViewController {
             // show next screen
         }
     }
+}
+
+// Feed Module
+struct FeedItem {}
+
+extension ApiClient {
+    func loadFeed(completion: ([FeedItem]) -> Void) {}
 }
 
 class FeedViewController: UIViewController {
@@ -37,5 +45,4 @@ class FeedViewController: UIViewController {
     }
 }
 
-// Diagram
-UIImage(named: "singleton")
+UIImage(named: "singleton_extension")
