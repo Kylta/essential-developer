@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		464178A0228060D100F55590 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4641789F228060D100F55590 /* XCTestCase+MemoryLeakTracking.swift */; };
 		4659985F227B13D000DB60F8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659985E227B13D000DB60F8 /* HTTPClient.swift */; };
 		46599861227B14A200DB60F8 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46599860227B14A200DB60F8 /* FeedItemsMapper.swift */; };
 		46A3032022784D670026A8D5 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A3031622784D670026A8D5 /* EssentialFeed.framework */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4641789F228060D100F55590 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		4659985E227B13D000DB60F8 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		46599860227B14A200DB60F8 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		46A3031622784D670026A8D5 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,9 +62,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4641789E228060B000F55590 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4641789F228060D100F55590 /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		46599862227B1D6900DB60F8 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
+				4641789E228060B000F55590 /* Helpers */,
 				46A30335227853240026A8D5 /* RemoteFeedLoaderTests.swift */,
 				46ADF839227C51FF004DDCC1 /* URLSessionHTTPClientTests.swift */,
 			);
@@ -248,6 +259,7 @@
 			files = (
 				46A30336227853240026A8D5 /* RemoteFeedLoaderTests.swift in Sources */,
 				46ADF83A227C51FF004DDCC1 /* URLSessionHTTPClientTests.swift in Sources */,
+				464178A0228060D100F55590 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
