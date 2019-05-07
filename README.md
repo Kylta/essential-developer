@@ -3,6 +3,8 @@
 
 # Essential Feed App – Image Feed Feature
 
+[![Build Status](https://travis-ci.org/Kylta/essential-developer.svg?branch=master)](https://travis-ci.org/Kylta/essential-developer)
+
 ## Bad BDD Specs
 
 ### Story
